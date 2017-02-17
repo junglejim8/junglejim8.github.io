@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Woodstead - Open Solar</title>
+<style>
+div.container {
+    width: 950px;
+    border: 1px solid gray;
+    margin: auto;
+}
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: rgb(70,30,1);
+    clear: left;
+    text-align: center;
+    font-family: Courier New;
+}
+nav {
+    float: left;
+    max-width: 110px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: Courier New;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+article {
+    margin-left: 120px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    font-family: Courier New;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Woodstead - Open Solar</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href=index.html>Home</a></li>
+    <li><a href=projects.html>Projects</a></li>
+    <li><a href=http://blog.woodstead.org>Blog</a></li>
+    <li><a href=about.html>About</a></li>
+    <li><a href=contact.html>Contact</a></li>
+  </ul>
+</nav>
+
+<article>
+  <img src="solar/sch.png" width="500" align="right" hspace="15"> 
+  <h1>Project details</h1>
+  <p>Using the TI SM72442, I am designing a maximum power point tracking solar charge controller</p>
+  <p>The design should accomadate 100VDC input, up to 48v battery, and 65amp output current.</p>
+  <p>ESP8266 wifi chipset uses I2C to communicate with SM72442 for remote system management.</p>
+</article>
+
+<article>
+  <h1>Status</h1>
+  <p>The circuit board is being designed in KiCad, an open source EDA tool.<p>
+  <p>You can find <a href=https://github.com/junglejim8/opensolar>the schematic and PCB files on Github.</a></p>
+  <p>As of Feb 2017, the schematic has been created in Kicad, BOM is being worked on, and soon the PCB layout will begin.</p>
+  <p>Originally I started this project using BQ24650, an all in one MPPT IC. But it was limited to 30v open circuit and had no I2C communication</p>
+  
+</article>
+
+
+<footer>2017</footer>
+
+</div>
+
+</body>
+</html>
